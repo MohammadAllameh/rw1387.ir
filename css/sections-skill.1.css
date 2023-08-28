@@ -1,0 +1,266 @@
+.skill-section{
+    background-color: rgb(8 67 190 / 90%);
+    width: 200px;
+    height: 200px;
+    border-radius:25px;
+    border: 2px solid gray;
+    position:relative;
+    left:0;
+    right:0;
+    margin: 0rem 0.5rem;
+    filter : none;
+    overflow-x:hidden;
+    max-height: 347px;
+}
+.skill-section:hover{
+    filter : drop-shadow(0px 0px 6px #fff);
+    transition : filter 3s;
+}
+
+.section-div{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes animates {
+    0%{
+        width: 200px;
+        height: 200px;
+    }
+    100%{
+        height: 347px;
+    }
+}
+@keyframes identifier {
+    0%{
+        height: 347px;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media(max-width:320px) {
+    .skill-section{
+        margin: 0.5rem auto;
+        width: 65%;
+    }
+}
+@media(max-width:375px) {
+    .skill-section{
+        margin: 0.5rem auto;
+    }
+}
+@media(max-width:475px) {
+    .skill-section{
+        margin: 0.5rem auto;
+    }
+}
+
+
+.pagaraf-div-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    transition : width 2s , height 2s ,margin 2s,display 2;
+}
+
+.paragraf-section{
+    font:700 1.6rem/1.3 'Vazir';
+    color: rgb(247 183 49 / 92%);
+
+}
+.paragraf-section-icons{
+    font:350 1.3rem/1.3 'Vazir';
+    color: rgb(247 183 49 / 92%);
+}
+
+.div-parafraf-icons{
+    padding: 0.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cantener-section{
+    display: none;
+    border-radius: 25px;
+    position:relative;
+    left:0;
+    right:0;
+    width: 100%;
+    margin: 0 auto;
+    animation: animates 2s linear ;
+    max-height: 347px;
+
+}
+
+
+@media (max-width:768px) {
+    .cantener-section{
+        margin: 10%;
+        animation: animates 2s linear ;
+    }
+}
+
+
+@media (max-width:325px) {
+    .cantener-section{
+        margin: 5%;
+    }
+}
+
+
+
+.div-skill-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+.div-skill-section .card-section{
+    position: relative;
+    width: 220px;
+    height: 250px;
+    background-color: #636160;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    border-radius: 10%;
+    opacity: 0.1;
+    transition:opacity 3s;
+}
+
+.div-skill-section .card-section .percent-section{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.div-skill-section .card-section .percent-section .svg-section-skill{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform:rotate(270deg);
+}
+
+.div-skill-section .card-section .percent-section .svg-section-skill circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke:#191919;
+    transform: translate(5px,5px);
+}
+
+.div-skill-section .card-section .percent-section .svg-section-skill circle:nth-child(2){
+    stroke:var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num))/100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.dot-sections{
+    position:absolute;
+    inset: 5px;
+    z-index: 10;
+    /* 360deg / 100 = 3.6 */
+    animation:animateDot 3s linear forwards;
+}
+
+@keyframes animateDot {
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+
+.dot-sections::before{
+    content:'';
+    position:absolute;
+    top: -5px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+
+.number {
+    position:absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3.5s;
+}
+
+.number h2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.number h2 span{
+    font-weight: 300;
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+.number p{
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.div-section-svg{
+    display:none;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-section{
+    z-index: 1;
+    position:absolute;
+    right: 6px;
+    margin-bottom: 0.5rem;
+}

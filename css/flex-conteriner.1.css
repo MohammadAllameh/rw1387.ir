@@ -1,0 +1,48 @@
+.conteriner{
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 1rem 5rem 1rem 5rem;
+}
+
+@media (max-width:1024px) {
+    .conteriner {
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 1rem 5rem 1rem 5rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:475px) {
+    .conteriner{
+        display:block;
+        margin:0;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 1.5vw;
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color: #333;
+    border-radius: 10rem;
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+
+@media (min-width:728px) {
+    ::-webkit-scrollbar{
+        width: 0.75vw;
+    }
+}

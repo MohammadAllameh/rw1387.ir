@@ -1,104 +1,16 @@
-/* #Strip{
-	color: #000;
+html{
+    font-family: "Vazir";
+	font-size: 100%;
+    background-color: rgb(247 183 49 / 92%);;
+}
+
+/* .div-img{
+    background: url(./image/720.jpg);
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 } */
 
-#home{
-	/* background: red; */
-	padding: 20px 20px 0px 20px;
-
-	margin:0px 20px;
-	width: 99.132px;
-    height: 55.990px;
-	
-}
-
-#news{
-	/* background: rgb(255, 153, 0); */
-	padding: 20px 20px 0px 20px;
-
-	margin:0px 20px;
-	width: 99.132px;
-    height: 55.990px;
-}
-
-#book{
-	/* background: rgb(238, 255, 0); */
-	padding: 20px 20px 0px 20px;
-
-	margin:0px 20px;
-	width: 99.132px;
-    height: 55.990px;
-}
-
-#book-sale{
-	/* background: rgb(0, 255, 13); */
-	padding: 20px 20px 0px 20px;
-
-	margin:0px 20px;
-	width: 99.132px;
-    height: 55.990px;
-}
-
-#archive{
-	/* background: rgb(0, 255, 170); */
-	padding: 20px 20px 0px 20px;
-
-	margin:0px 20px;
-	width: 99.132px;
-    height: 55.990px;
-}
-
-#about-us{
-	/* background: rgb(0, 195, 255); */
-	padding: 20px 20px 0px 20px;
-
-	margin:0px 20px;
-	width: 99.132px;
-    height: 55.990px;
-}
-
-#Contact-us{
-	/* background: rgb(68, 0, 255); */
-	padding: 20px 20px 0px 20px;
-
-	margin:0px 20px;
-	width: 99.132px;
-    height: 55.990px;
-}
-
-li:hover{
-	background: #009106;
-}
-
-li:hover  a{
-	color:#f27020;
-	font-weight: bold;
-}
-
-ul {
-	background : white;
-	color :#000;
-}
-
-a {
-	color: #009106;
-}
-
-.articles {
-	background : white;
-	color: #000;
-	padding: 10px;
-	border : 3px solid skyblue;
-	width: 64px;
-    height: 18px;
-}
-
-h4:hover {
-	background : gray;
-	color : green;
-}
-
-.instagram {
-	width: 64px;
-    height: 64px;
-}

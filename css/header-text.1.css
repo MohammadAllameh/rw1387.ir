@@ -1,0 +1,41 @@
+.div-text{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.text-header{
+    position: relative;
+    font-size: 2rem;
+    color:rgb(247 183 49 / 92%);
+}
+
+@media (max-width:425px) {
+    .text-header{
+        font-size: 1.8rem;
+    }
+}
+
+.text-header::before{
+    content:attr(data-text);
+    position:absolute;
+    color:rgb(255, 69, 0);
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #000;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+    background-color: dark;
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}

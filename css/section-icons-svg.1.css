@@ -1,0 +1,25 @@
+.about-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 300px;
+    height: 100%;
+    border: 2px solid gray;
+    border-radius: 25px;
+    background-color: rgb(8 67 190 / 90%);
+    margin: 0;
+    max-height: 354px;
+}
+
+
+.about-icons-svg{
+    margin: 1rem ;
+}
+@media(max-width:768px) {
+    .about-icons{
+        width: 80%;
+        margin: auto;
+    }
+}

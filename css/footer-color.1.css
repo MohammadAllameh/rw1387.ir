@@ -1,0 +1,54 @@
+.div-color-footer{
+    border: 3px dashed white;
+    border-radius: 10px;
+    width: 180px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    position:fixed;
+    left:0;
+    right:0;
+    margin: 0 auto;
+}
+
+#blue{
+    width: 27px;
+    height: 27px;
+    border:1px solid rgb(58, 46, 45);
+    border-radius: 5px;
+    background-color: rgb(18, 96, 197);
+    margin: 0 0.5rem;
+}
+
+#orang{
+    width: 27px;
+    height: 27px;
+    border:1px solid rgb(58, 46, 45);
+    border-radius: 5px;
+    background-color: rgb(255, 128, 64);
+    margin: 0 0.5rem;
+}
+
+#green{
+    width: 27px;
+    height: 27px;
+    border:1px solid rgb(58, 46, 45);
+    border-radius: 5px;
+    background-color: rgb(18, 173, 18) ;
+    margin: 0 0.5rem;
+}
+
+
+
+#color{
+    width: 27px;
+    height: 27px;
+    border:1px solid rgb(58, 46, 45);
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    background-color: black;
+    
+}
+
